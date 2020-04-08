@@ -1,2 +1,7 @@
 FROM registry.bizsaas.net/eclipse/che-plugin-registry:offline-7.3.0
-COPY ./v3 /var/www/html/
+
+COPY v3/plugins/eclipse/che-machine-exec-plugin/7.3.0/meta.yaml /var/www/html/v3/plugins/eclipse/che-machine-exec-plugin/7.3.0/meta.yaml
+COPY v3/plugins/eclipse/che-machine-exec-plugin/latest/meta.yaml /var/www/html/v3/plugins/eclipse/che-machine-exec-plugin/latest/meta.yaml
+COPY v3/plugins/eclipse/che-theia/7.3.0/meta.yaml /var/www/html/v3/plugins/eclipse/che-theia/7.3.0/meta.yaml
+COPY v3/plugins/eclipse/che-theia/latest/meta.yaml /var/www/html/v3/plugins/eclipse/che-theia/latest/meta.yaml
+COPY v3/plugins/redhat/java11/latest/meta.yaml /var/www/html/v3/plugins/redhat/java11/latest/meta.yaml
